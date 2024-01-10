@@ -6,16 +6,16 @@ body,
 }
 
 :root {
-	--main-color: #520f0f;
-	--bg-light: whitesmoke;
-	--font-color: #fff;
+	--main-color: #ab8a62;
+	--bg-light: #f8f5f0;
+	--font-color: #222222;
 }
 
 html,
 body {
 	overflow-x: hidden !important;
 	width: 100% !important;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Barlow', sans-serif;
 }
 
 h1,
@@ -24,7 +24,7 @@ h3,
 h4,
 h5 {
 	font-weight: 600;
-	font-family: 'Palanquin Dark', sans-serif;
+	font-family: 'Gilda Display', serif;
 }
 
 h1 {
@@ -58,19 +58,18 @@ p {
 a.common_btn {
 	text-decoration: none;
 	padding: 8px 24px;
-	color: var(--font-color);
+	color: #fff;
+	font-weight: 500;
 	background: var(--main-color);
 	border: 1px solid transparent;
 	transition: all 0.5s;
-	border-radius: 5px;
 }
 
 a.common_btn:hover {
-	border: 1px solid var(--main-color);
-	color: var(--bg-dark);
-	background: var(--font-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background: transparent;
 }
-
 
 .container {
 	width: 100%;
@@ -112,7 +111,7 @@ a.common_btn:hover {
 	text-decoration: none;
 	cursor: pointer;
 	font-weight: 500;
-	color: var(--font-color);
+    color: #fff;
 	transition: all 0.5s;
 }
 
@@ -135,7 +134,7 @@ header {
 	z-index: 999;
 	padding: 20px 0px;
 	background-color: #000;
-	border-bottom: 1px solid #fff;
+	/* border-bottom: 1px solid #fff; */
 }
 
 .nav-title a {
@@ -188,7 +187,7 @@ header {
 
 
 a.logo img {
-    max-width: 150px;
+	max-width: 190px;
 }
 
 h3 {
@@ -212,14 +211,11 @@ h3 {
 	transition: all 0.5s;
 	text-align: center;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	position: relative;
 }
 
 .luxhotel_card:hover img {
 	filter: grayscale();
-}
-
-.luxury_hotels_inner {
-    border: 1px solid #22bddd;
 }
 
 
@@ -353,7 +349,6 @@ footer .footer_right ul li a:hover {
 
 .why_choose_card img {
 	max-width: 70px;
-	filter: invert(1);
 }
 
 .why_choose_card h3 {
@@ -366,14 +361,14 @@ footer .footer_right ul li a:hover {
 }
 
 .why_choose_card {
-	color: #fff;
-	text-align: center;
-	border: unset;
-	height: 100%;
-	padding: 25px 15px;
-	border: 1px solid rgb(255 255 255 / 75%);
-	border-radius: 5px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #000;
+    text-align: center;
+    height: 100%;
+    padding: 25px 15px;
+    border: 1px solid rgb(255 255 255 / 75%);
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
 }
 
 .why_choose_card:hover h3 {
@@ -390,15 +385,15 @@ footer .footer_right ul li a:hover {
 }
 
 .why_choose::before {
-	top: 0;
-	position: absolute;
-	content: '';
-	height: 100%;
-	width: 100%;
-	background-color: #000000c4;
-	z-index: -1;
+    top: 0;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color:var(--bg-light);
+    z-index: -1;
+    border-top: 1px solid #ab8a62;
 }
-
 .luxhotel_card img {
 	width: 100%;
 	min-height: 490px;
@@ -411,10 +406,10 @@ footer .footer_right ul li a:hover {
 }
 
 
-
 .luxhotel_card_further img {
-	min-height: 450px;
-	object-fit: cover;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .content_card {
@@ -444,12 +439,13 @@ footer .footer_right ul li a:hover {
 }
 
 input.form-control.sub_btn {
-	width: 200px;
-	padding: 10px;
-	background-color: var(--main-color);
-	color: var(--font-color);
-	border: 1px solid transparent;
-	transition: all 0.5s;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    font-weight: 500;
 }
 
 input.form-control.sub_btn:hover {
@@ -468,11 +464,11 @@ input.form-control.sub_btn:hover {
 
 
 .footer_left a img {
-    max-width: 150px;
+    max-width: 190px;
 }
 
 .after_banner_section.section {
-    background: whitesmoke;
+    background: #f8f5f0;
 }
 .luxury_hotels_inner img{
 transition: all 0.5s;
@@ -482,10 +478,54 @@ transition: all 0.5s;
 	}
 
 	.right_side_first {
-		background: whitesmoke;
+		background:#f8f5f0;
 		padding: 40px;
 		border-radius: 5px;
 	}
 	.contact_us.section {
 		border-top: 1px solid #21bddd61;
+	}
+	.sub_banner_content h1, h5 {
+		letter-spacing: 1px;
+		color: #ffff;
+	}
+	.right_side_ab img {
+		border-radius: 10px;
+	}
+	.index_luxury_hotel  .luxury_hotels_inner {
+		background: #f8f5f0;
+	}
+
+	.index_page_button {
+		position: absolute;
+		bottom: 0;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		background: #0000008a;
+	}
+
+	.luxury_hotels_inner {
+		background:var(--bg-light);
+	}
+	.luxury_hotels_inner h3 {
+		color: var(--main-color);
+	}
+	.luxury_hotels_inner h5 {
+		color: #000;
+	}
+
+	.why_choose_card p {
+		color: #000;
+	}
+
+	.about_us.section {
+		background: #f8f5f0;
+	}
+	.about_us.section  a {
+		background: #aa8a63;
+		color: #fff;
+	}
+	.about_us.section h5 {
+		color: #000;
 	}
