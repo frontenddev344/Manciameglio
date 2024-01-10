@@ -53,7 +53,7 @@
 		display: inline-block;
 		position: absolute;
 		right: 15px;
-		top: 25px;
+		top: 10px;
 		padding-top: 0.2rem;
 		z-index: 2;
 	}
@@ -70,7 +70,7 @@
 		display: block;
 		width: 25px;
 		height: 10px;
-		border-top: 2px solid #21bddd;
+		border-top: 2px solid #ab8a62;
 		filter: invert(1);
 	}
 
