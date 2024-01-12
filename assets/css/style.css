@@ -562,3 +562,21 @@ h5 {
 .footer_right ul li:nth-child(4) a{
 background-color: #1d9df0;
 }
+
+
+.accordion-button:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+.accordion-button:not(.collapsed) {
+    color: #ab8a62;
+    background-color: #f8f5f0;
+    font-weight: 600;
+    box-shadow: unset;
+    font-size: 20px;
+}
+.accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ab8a62;
+}
